@@ -3,6 +3,8 @@ import './ExpenseItem.css'
 
 const ExpenseItem = () =>
 {
+    const expenseDate = new Date()
+
     return (
         <div className='expense-item'>
             <div> March 28th 2021</div>
