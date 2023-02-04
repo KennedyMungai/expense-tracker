@@ -3,12 +3,17 @@ import './ExpenseForm.css'
 
 const ExpenseForm = () =>
 {
+    const titleChangeHandler = () => 
+    {
+
+    }
+
     return (
         <form action="">
             <div className="new-expense__controls">
                 <div className="new-expense__control">
                     <label htmlFor="new_expense__title">Title</label>
-                    <input type="text" name="title" id="new_expense__title" />
+                    <input type="text" name="title" id="new_expense__title" onChange={titleChangeHandler} />
                 </div>
                 <div className="new-expense__control">
                     <label htmlFor="new_expense__amount">Amount</label>
