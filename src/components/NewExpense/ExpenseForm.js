@@ -58,6 +58,8 @@ const ExpenseForm = () =>
             date: new Date(enteredDate)
         }
 
+        console.log(expenseData)
+
         // setEnteredAmount(0)
         // setEnteredTitle('')
         // setEnteredDate('')
