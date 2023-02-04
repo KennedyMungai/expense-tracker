@@ -15,17 +15,26 @@ const ExpenseForm = () =>
 
     const titleChangeHandler = (e) => 
     {
-        setUserInput.enteredTitle(e.target.value)
+        setUserInput({
+            enteredTitle: e.target.value
+        })
+        console.log(e.target.value)
     }
 
     const amountChangeHandler = (e) => 
     {
-        setUserInput.enteredAmount(e.target.value)
+        setUserInput({
+            enteredAmount: e.target.value
+        })
+        console.log(e.target.value)
     }
 
     const dateChangeHandler = (e) => 
     {
-        setUserInput.enteredDate(e.target.value)
+        setUserInput({
+            enteredDate: e.target.value
+        })
+        console.log(e.target.value)
     }
 
     return (
