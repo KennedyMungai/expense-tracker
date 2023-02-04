@@ -51,9 +51,16 @@ const ExpenseForm = () =>
     const submitHandler = (e) => 
     {
         e.preventDefault()
-        setEnteredAmount(0)
-        setEnteredTitle('')
-        setEnteredDate('')
+
+        const expenseData = {
+            title: enteredTitle,
+            amount: enteredAmount,
+            date: enteredDate
+        }
+
+        // setEnteredAmount(0)
+        // setEnteredTitle('')
+        // setEnteredDate('')
     }
 
     return (
