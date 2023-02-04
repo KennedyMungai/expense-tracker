@@ -4,8 +4,8 @@ import './ExpenseForm.css'
 const ExpenseForm = () =>
 {
     const [enteredTitle, setEnteredTitle] = useState('')
-    const [enteredAmount, setEnteredAmount] = useState()
-    const [enteredDate, setEnteredDate] = useState()
+    const [enteredAmount, setEnteredAmount] = useState(0)
+    const [enteredDate, setEnteredDate] = useState('')
 
     // const [userInput, setUserInput] = useState({
     //     enteredTitle: '',
@@ -51,6 +51,9 @@ const ExpenseForm = () =>
     const submitHandler = (e) => 
     {
         e.preventDefault()
+        setEnteredAmount(0)
+        setEnteredTitle('')
+        setEnteredDate('')
     }
 
     return (
