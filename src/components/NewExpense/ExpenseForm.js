@@ -60,9 +60,9 @@ const ExpenseForm = () =>
 
         console.log(expenseData)
 
-        // setEnteredAmount(0)
-        // setEnteredTitle('')
-        // setEnteredDate('')
+        setEnteredAmount(0)
+        setEnteredTitle('')
+        setEnteredDate('')
     }
 
     return (
