@@ -7,7 +7,7 @@ const ExpenseForm = () =>
 
     const titleChangeHandler = (e) => 
     {
-        console.log(e.target.value)
+        setEnteredTitle(e.target.value)
     }
 
     return (
