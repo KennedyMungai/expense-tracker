@@ -5,7 +5,7 @@ const ExpenseForm = () =>
 {
     const [enteredTitle, setEnteredTitle] = useState('')
     const [enteredAmount, setEnteredAmount] = useState()
-    const [enteredDate, setenteredDate] = useState()
+    const [enteredDate, setEnteredDate] = useState()
 
     const titleChangeHandler = (e) => 
     {
@@ -15,6 +15,11 @@ const ExpenseForm = () =>
     const amountChangeHandler = (e) => 
     {
         setEnteredAmount(e.target.value)
+    }
+
+    const dateChangeHandler = (e) => 
+    {
+        setEnteredDate(e.target.value)
     }
 
     return (
