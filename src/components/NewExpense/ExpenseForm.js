@@ -5,6 +5,7 @@ const ExpenseForm = () =>
 {
     const [enteredTitle, setEnteredTitle] = useState('')
     const [enteredAmount, setEnteredAmount] = useState()
+    const [enteredDate, setenteredDate] = useState()
 
     const titleChangeHandler = (e) => 
     {
@@ -25,7 +26,7 @@ const ExpenseForm = () =>
                 </div>
                 <div className="new-expense__control">
                     <label htmlFor="new_expense__amount">Amount</label>
-                    <input type="number" name="amount" id="new_expense__amount" min='0.01' step='0.01' />
+                    <input type="number" name="amount" id="new_expense__amount" min='0.01' step='0.01' onChange={amountChangeHandler} />
                 </div>
                 <div className="new-expense__control">
                     <label htmlFor="new_expense__date">Date</label>
