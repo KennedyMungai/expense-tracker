@@ -48,8 +48,16 @@ const ExpenseForm = () =>
         // })
     }
 
+    const submitHandler = (e) => 
+    {
+        e.preventDefault()
+    }
+
     return (
-        <form action="">
+        <form
+            action=""
+            onSubmit={submitHandler}
+        >
             <div className="new-expense__controls">
                 <div className="new-expense__control">
                     <label htmlFor="new_expense__title">Title</label>
@@ -65,7 +73,11 @@ const ExpenseForm = () =>
                 </div>
             </div>
             <div className="new-expense__actions">
-                <button type='submit'>Add Expense</button>
+                <button
+                    type='submit'
+                >
+                    Add Expense
+                </button>
             </div>
         </form>
     )
