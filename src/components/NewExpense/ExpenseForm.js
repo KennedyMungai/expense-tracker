@@ -10,6 +10,11 @@ const ExpenseForm = () =>
         setEnteredTitle(e.target.value)
     }
 
+    const amountChangeHandler = (e) => 
+    {
+        setEnteredAmount(e.target.value)
+    }
+
     return (
         <form action="">
             <div className="new-expense__controls">
