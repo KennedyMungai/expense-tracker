@@ -4,6 +4,7 @@ import './ExpenseForm.css'
 const ExpenseForm = () =>
 {
     const [enteredTitle, setEnteredTitle] = useState('')
+    const [enteredAmount, setEnteredAmount] = useState()
 
     const titleChangeHandler = (e) => 
     {
