@@ -3,9 +3,9 @@ import './ExpenseForm.css'
 
 const ExpenseForm = () =>
 {
-    const titleChangeHandler = () => 
+    const titleChangeHandler = (e) => 
     {
-
+        console.log(e.target.value)
     }
 
     return (
