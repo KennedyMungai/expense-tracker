@@ -5,6 +5,11 @@ import Card from '../UI/Card'
 
 const ExpenseItem = (props) =>
 {
+    const clickHandler = () =>
+    {
+        console.log('I was clicked')
+    }
+
     return (
         <Card className='expense-item'>
             <ExpenseDate date={props.date} />
