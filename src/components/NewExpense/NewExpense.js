@@ -1,9 +1,12 @@
 import React from 'react'
+import './NewExpense.css'
 
 const NewExpense = () =>
 {
     return (
-        <div>NewExpense</div>
+        <div>
+            <form action=""></form>
+        </div>
     )
 }
 
