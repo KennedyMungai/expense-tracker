@@ -60,7 +60,7 @@ const ExpenseForm = (props) =>
 
         console.log(expenseData)
 
-        props.onSaveExpenseData()
+        props.onSaveExpenseData(expenseData)
         setEnteredAmount(0)
         setEnteredTitle('')
         setEnteredDate('')
