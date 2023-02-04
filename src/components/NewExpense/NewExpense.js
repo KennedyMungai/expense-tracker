@@ -8,7 +8,7 @@ const NewExpense = () =>
     {
         const expenseData = {
             ...enteredExpenseData,
-            id: Math.random()
+            id: Math.random().toString()
         }
     }
 
