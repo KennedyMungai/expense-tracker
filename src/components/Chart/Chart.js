@@ -5,7 +5,9 @@ import ChartBar from './ChartBar'
 const Chart = (props) =>
 {
     return (
-        <div>Chart</div>
+        <div className='chart'>
+            {props.dataPoints.map((dataPoint) => <ChartBar value={dataPoint.value} />)}
+        </div>
     )
 }
 
