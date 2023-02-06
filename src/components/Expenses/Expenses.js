@@ -30,7 +30,7 @@ const Expenses = (props) =>
                     onChangeFilter={filterChangeHandler}
                 />
 
-                <ExpensesList />
+                <ExpensesList items={filteredExpenses} />
             </Card>
         </div>
     );
