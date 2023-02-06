@@ -4,7 +4,8 @@ import './ChartBar.css'
 const ChartBar = (props) =>
 {
     return (
-        <div>ChartBar</div>
+        <div className='chart-bar'>
+        </div>
     )
 }
 
