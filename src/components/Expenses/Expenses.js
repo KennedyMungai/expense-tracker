@@ -20,6 +20,8 @@ const Expenses = (props) =>
     }
     )
 
+    let expensesContent = <p>No Expenses found</p>
+
     return (
         <div>
             <Card className='expenses'>
