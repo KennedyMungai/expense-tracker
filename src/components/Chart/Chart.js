@@ -1,7 +1,7 @@
 import React from 'react'
 import './Chart.css'
 
-const Chart = () =>
+const Chart = (props) =>
 {
     return (
         <div>Chart</div>
