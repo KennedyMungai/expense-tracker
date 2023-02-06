@@ -6,7 +6,7 @@ const ExpensesList = (props) =>
 {
     if (props.items.length === 0)
     {
-        return <h2 className="expenses-list__falback">Found No Expense</h2>
+        return <h2 className="expenses-list__falback">Found No Expenses</h2>
     }
 
     return (
