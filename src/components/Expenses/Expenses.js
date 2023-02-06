@@ -22,6 +22,18 @@ const Expenses = (props) =>
 
     let expensesContent = <p>No Expenses found</p>
 
+    if (filteredExpenses.length > 0)
+    {
+        expensesContent = filteredExpenses.map((expense) => (
+            <ExpenseItem
+                key={expense.id}
+                title={expense.title}
+                amount={expense.amount}
+                date={expense.date}
+            />
+        ))
+    }
+
     return (
         <div>
             <Card className='expenses'>
@@ -31,7 +43,7 @@ const Expenses = (props) =>
                 />
                 {filteredExpenses.length === 0 && <p>No Expenses Found</p>}
                 {filteredExpenses.length === 0 ? (<p>No items found</p>) : (
-                    props.items.map((expense) => (
+                    filteredExpenses.map((expense) => (
                         <ExpenseItem
                             key={expense.id}
                             title={expense.title}
