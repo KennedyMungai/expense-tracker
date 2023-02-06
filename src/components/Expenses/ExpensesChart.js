@@ -1,7 +1,7 @@
 import React from 'react'
 import Chart from '../Chart/Chart'
 
-const ExpensesChart = () =>
+const ExpensesChart = (props) =>
 {
     const chartDataPoints =
         [
@@ -54,6 +54,13 @@ const ExpensesChart = () =>
                 value: 0
             },
         ]
+
+    props.expenses.forEach((expense) => 
+    {
+        const expenseMonth = expense.date.getMonth()        // The months start at 0
+
+        chartDataPoints[expenseMonth].value += expense.amount
+    })
 
     return (
         <Chart />
