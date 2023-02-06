@@ -6,11 +6,6 @@ const ExpensesList = (props) =>
 {
     let expensesContent = <p>No Expenses found</p>
 
-    // if (props.items.length > 0)
-    // {
-    //     expensesContent = 
-    // }
-
     return (
         <ul className='expenses-list'>
             {props.items.map((expense) => (
